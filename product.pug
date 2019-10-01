@@ -1,0 +1,53 @@
+mixin product-box(img, tit1)
+    div(class="product-box")
+        div(class="product-img-box")
+            img(src="img/" + img , alt="聯絡我們 照片")
+        h2=tit1
+
+
+<!DOCTYPE html>
+html(lang="zh")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
+    title 台灣摩迪高 | 首頁
+    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet",href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS",crossorigin="anonymous")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+
+    body
+
+        div(id="banner")
+            nav
+                a(herf="index.html")
+                    img(src="img/banner.jpg",alt="摩迪高 LOGO" class="banner")
+                div(class="link")
+                    a(href="#") 產品
+                    a(href="#") 相關新聞
+                    a(href="#") 聯絡我們
+                    a(href="#") 關於我們
+                
+        div(class="product-container")
+            div(id="product-link")
+                a(href="#") 附件
+                a(href="#") 玩具模型
+            div(id="annex")
+                +product-box("1_1.jpg", "掃地機")
+                +product-box("1_2.jpg", "割草機")
+                +product-box("1_3.jpg", "堆高叉架")
+            div(id="toy",style="display: none")
+                +product-box("2_1.jpg", "鏟裝機模型 S510")
+                +product-box("2_2.jpg", "鏟裝機模型 S550")
+                +product-box("2_3.jpg", "鏟裝機模型 S590")
+                +product-box("2_4.png", "鏟裝機超值組合")
+
+            
+        footer
+            nav
+                img(src="img/banner.jpg", alt="摩迪高 LGOO" class="logo")
+                div(class="link")
+                    a(href="#") 最新消息
+                    a(href="#") 產品介紹
+                    a(href="#") 聯絡我們
+                div(id="copy") Copyright &copy; 2019 摩迪高. All rights reserved    

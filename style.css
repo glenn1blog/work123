@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+a { 
+    color: black;
+}
+
+#banner {
+    background-repeat: no-repeat;
+    width: 100vw;
+    /* calc 計算 - CSS 計算數字 + - * / */
+    height: 100px;
+}
+
+.link {
+    float: right;
+    padding: 15px 0;
+
+}
+
+.link a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 15px;
+    /* 字體粗細 0 - 900 */
+    font-weight: 800;
+}
+.link a:hover {
+    background-color: rgba(0,0,0,0.1);
+    color: black;
+    transition: 0.6s;
+}
+
+nav {
+        width: 80%;
+        margin: 0 auto;
+        padding: 50px 0;
+        text-align: left;
+}
+
+/*商品*/
+#product-link {
+    text-align: center;
+}
+#product-link a{
+    color: #000;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: 800;
+    font-size: 30px;
+}
+#product-link a:hover{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    transition: 0.6s;
+}
+#annex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+#toy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+.product-box {
+    padding: 0 10px;
+}
+.product-img-box {
+    overflow: hidden;
+    min-height: 250px;
+    margin: 20px;
+    padding: 15px;
+}
+.product-img-box img {
+    width: 100%;
+    margin: 10px auto;
+    transition: 1s;
+}
+.product-img-box img:hover {
+    transform: scale(1.15);
+}
+.product-box h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+        background-color: #414040;
+        color: #fff;
+        margin-top: 100px;
+}
+
+/*RWD*/
+/* 媒體為螢幕 並且 寬度大於 1024px - 桌機*/
+@media screen and (min-width: 1024px) {
+  
+}
+/* 媒體為螢幕 並且 寬度大於 1023px - 平板*/
+@media screen and (max-width: 1023px) {
+    #annex {
+        grid-template-columns: 1fr 1fr;
+    }
+    #toy {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* 媒體為螢幕 並且 寬度小於 767px - 手機*/
+@media screen and (max-width: 767px) {
+    #annex {
+        grid-template-columns: 1fr;
+    }
+    #toy {
+        grid-template-columns: 1fr;
+    }
+}
