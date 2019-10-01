@@ -48,33 +48,43 @@ nav {
 
 /*商品*/
 #product-link {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
 }
-#product-link a{
+#product-link div{
+    display: inline-block;
     color: #000;
     text-decoration: none;
     padding: 5px 15px;
     font-weight: 800;
     font-size: 30px;
 }
-#product-link a:hover{
+#product-link div:hover{
     background-color: rgba(0,0,0,0.8);
     color: white;
     transition: 0.6s;
 }
-#annex {
+.product-link-color {
+    background-color: rgba(0,0,0,0.8);
+    color: white!important; 
+}
+.product-link-color:nth-of-type(2) {
+    background-color: white;
+    color:black;
+}
+.product-area {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px 30px;
     width: 80%;
     margin: 0 auto;
 }
-#toy {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px 30px;
-    width: 80%;
-    margin: 0 auto;
+.product-area-a {
+    display: grid!important;
+}
+.product-area:nth-of-type(3) {
+    display: none;
 }
 .product-box {
     padding: 0 10px;
@@ -112,19 +122,13 @@ footer {
 }
 /* 媒體為螢幕 並且 寬度大於 1023px - 平板*/
 @media screen and (max-width: 1023px) {
-    #annex {
-        grid-template-columns: 1fr 1fr;
-    }
-    #toy {
+    .product-area {
         grid-template-columns: 1fr 1fr;
     }
 }
 /* 媒體為螢幕 並且 寬度小於 767px - 手機*/
 @media screen and (max-width: 767px) {
-    #annex {
-        grid-template-columns: 1fr;
-    }
-    #toy {
+    .product-area {
         grid-template-columns: 1fr;
     }
 }

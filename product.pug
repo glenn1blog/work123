@@ -30,18 +30,19 @@ html(lang="zh")
                 
         div(class="product-container")
             div(id="product-link")
-                a(href="#") 附件
-                a(href="#") 玩具模型
-            div(id="annex")
+                div(id="annex-btn" class="product-link-color") 附件
+                div(id="toy-btn" class="product-link-color") 玩具模型
+            div(id="annex", class="product-area")
                 +product-box("1_1.jpg", "掃地機")
                 +product-box("1_2.jpg", "割草機")
                 +product-box("1_3.jpg", "堆高叉架")
-            div(id="toy",style="display: none")
+            div(id="toy", class="product-area")
                 +product-box("2_1.jpg", "鏟裝機模型 S510")
                 +product-box("2_2.jpg", "鏟裝機模型 S550")
                 +product-box("2_3.jpg", "鏟裝機模型 S590")
                 +product-box("2_4.png", "鏟裝機超值組合")
 
+        script(src="pro.js")
             
         footer
             nav
