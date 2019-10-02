@@ -69,22 +69,12 @@ nav {
     background-color: rgba(0,0,0,0.8);
     color: white!important; 
 }
-.product-link-color:nth-of-type(2) {
-    background-color: white;
-    color:black;
-}
 .product-area {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px 30px;
     width: 80%;
     margin: 0 auto;
-}
-.product-area-a {
-    display: grid!important;
-}
-.product-area:nth-of-type(3) {
-    display: none;
 }
 .product-box {
     padding: 0 10px;
