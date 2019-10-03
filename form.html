@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <title>台灣摩迪高 | 首頁</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <body>
+    <div id="banner">
+      <nav><a herf="index.html"><img class="banner" src="img/banner.jpg" alt="摩迪高 LOGO"/></a>
+        <div class="link"><a href="#">產品</a><a href="#">相關新聞</a><a href="#">聯絡我們</a><a href="#">關於我們</a></div>
+      </nav>
+    </div>
+    <div id="form-container">
+      <form method="post">
+        <label for="company">公司名稱：</label>
+        <input type="text" name="company" id="company" required="required" placeholder="請輸入您的姓名"/>
+        <label for="name">聯絡人：</label>
+        <input type="text" name="name" id="name" required="required" placeholder="請輸入您的姓名"/>
+        <label for="email">信箱：</label>
+        <input type="email" name="email" id="email" required="required" placeholder="請輸入您的信箱"/>
+        <label for="phone">連絡電話：</label>
+        <input type="phone" name="phone" id="phone" required="required" placeholder="請輸入您的信箱"/>
+        <fieldset>
+          <legend>性別</legend>
+          <label for="man">男生</label>
+          <input type="radio" name="sex" id="man" value="man" required="required"/>
+          <label for="man">女生</label>
+          <input type="radio" name="sex" id="woman" value="woman" required="required"/>
+        </fieldset>
+        <label for="message">洽詢內容：</label>
+        <textarea id="message" cols="30" rows="5" required="required"></textarea>
+        <div id="button">
+          <input class="btn" type="reset" value="重新輸入"/>
+          <input class="btn" type="reset" value="確認送出"/>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <nav><img class="logo" src="img/banner.jpg" alt="摩迪高 LGOO"/>
+        <div class="link"><a href="#">最新消息</a><a href="#">產品介紹</a><a href="#">聯絡我們</a></div>
+        <div id="copy">Copyright &copy; 2019 摩迪高. All rights reserved    </div>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -99,6 +99,58 @@ nav {
     font-weight: bold;
 }
 
+/*表單*/
+label {
+    font-size: 18px;
+  }
+  
+  form {
+    background-color: #eee;
+    width: 600px;
+    height: 850px;
+    margin: 100px auto 0 auto;
+    padding: 30px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: left;
+  }
+
+  #company, #name, #email, #phone, #message {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  fieldset {
+    border: 0.5px solid rgba(0, 0, 0, 0.1)!important;
+    margin: 10px 0!important;
+    padding: 10px!important;
+  }
+  
+  .btn {
+    width: 40%;
+    height: 50px;
+    color: #999;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+  }
+
+  .btn:hover {
+      border: 3px solid rgba(34, 172, 214, 0.671);
+  }
+  
+  #button {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* 預留文字 */
+  ::placeholder {
+    color: #ccc;
+  }
+
 footer {
         background-color: #414040;
         color: #fff;

@@ -1,0 +1,64 @@
+mixin product-box(img, tit1)
+    div(class="product-box")
+        div(class="product-img-box")
+            img(src="img/" + img , alt="聯絡我們 照片")
+        h2=tit1
+
+
+<!DOCTYPE html>
+html(lang="zh")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
+    title 台灣摩迪高 | 首頁
+    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet",href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS",crossorigin="anonymous")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+
+    body
+
+        div(id="banner")
+            nav
+                a(herf="index.html")
+                    img(src="img/banner.jpg",alt="摩迪高 LOGO" class="banner")
+                div(class="link")
+                    a(href="#") 產品
+                    a(href="#") 相關新聞
+                    a(href="#") 聯絡我們
+                    a(href="#") 關於我們
+        div(id="form-container")
+            form(method="post")
+                label(for="company") 公司名稱：
+                input(type="text",name="company", id="company", required placeholder="請輸入您的姓名" )
+                label(for="name") 聯絡人：
+                input(type="text",name="name", id="name", required placeholder="請輸入您的姓名" )
+                label(for="email") 信箱：
+                input(type="email",name="email", id="email", required placeholder="請輸入您的信箱")
+                label(for="phone") 連絡電話：
+                input(type="phone",name="phone", id="phone", required placeholder="請輸入您的信箱")
+
+                fieldset
+                    legend 性別
+                    label(for="man") 男生
+                    input(type="radio", name="sex", id="man", value="man", required)
+
+                    label(for="man") 女生
+                    input(type="radio", name="sex", id="woman", value="woman", required)
+
+                label(for="message") 洽詢內容：
+                textarea(id="message", cols="30", rows="5", required)
+
+                div(id="button")
+                    input(type="reset", value="重新輸入", class="btn")
+                    input(type="reset", value="確認送出", class="btn")
+                
+            
+        footer
+            nav
+                img(src="img/banner.jpg", alt="摩迪高 LGOO" class="logo")
+                div(class="link")
+                    a(href="#") 最新消息
+                    a(href="#") 產品介紹
+                    a(href="#") 聯絡我們
+                div(id="copy") Copyright &copy; 2019 摩迪高. All rights reserved    
